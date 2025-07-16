@@ -1,0 +1,26 @@
+{
+  "name": "gym-management-app",
+  "version": "1.0.0",
+  "description": "Modern MERN stack gym management application with Material-UI",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-deps": "npm install && cd frontend && npm install && cd ../backend && npm install"
+  },
+  "keywords": [
+    "gym",
+    "management",
+    "MERN",
+    "material-ui",
+    "react",
+    "node"
+  ],
+  "author": "Gym Management Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
